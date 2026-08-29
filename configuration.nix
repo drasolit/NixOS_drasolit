@@ -11,7 +11,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub.device = "nodev";
 
-  networking.hostName = "hyprland-btw";
+  networking.hostName = "drasolit";
   networking.networkmanager.enable = true;
 
   time.timeZone = "Asia/Ho_Chi_Minh";
@@ -23,6 +23,8 @@
     xwayland.enable = true;
     withUWSM = true;
   };
+
+  programs.nix-ld.enable = true;
 
   users.users.sil = {
     isNormalUser = true;
@@ -42,6 +44,9 @@
     waybar
     git
     hyprpaper
+    curl
+    jq
+    unzip
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
