@@ -10,7 +10,7 @@
     };
 
      outputs = { nixpkgs, home-manager, ... } : {
-	nixosConfigurations.hyprland-btw = nixpkgs.lib.nixosSystem {
+	nixosConfigurations.drasolit = nixpkgs.lib.nixosSystem {
 	    system = "x86_64-linux";
 	    modules = [
 		./configuration.nix
